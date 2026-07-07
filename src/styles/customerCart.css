@@ -1,0 +1,201 @@
+.cart-page{
+
+    width:90%;
+    max-width:1300px;
+    margin:40px auto;
+
+}
+
+.cart-page h1{
+
+    margin-bottom:30px;
+    color:#111827;
+
+}
+
+.cart-container{
+
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:30px;
+
+}
+
+.cart-card{
+
+    display:flex;
+    align-items:center;
+    gap:20px;
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    margin-bottom:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+
+}
+
+.cart-card img{
+
+    width:130px;
+    height:130px;
+    object-fit:cover;
+    border-radius:15px;
+
+}
+
+.cart-details{
+
+    flex:1;
+
+}
+
+.cart-details h3{
+
+    margin-bottom:12px;
+
+}
+
+.cart-details p{
+
+    color:#6C63FF;
+
+    font-weight:600;
+
+    margin-bottom:20px;
+
+}
+
+.quantity{
+
+    display:flex;
+
+    gap:15px;
+
+    align-items:center;
+
+}
+
+.quantity button{
+
+    width:35px;
+
+    height:35px;
+
+    border:none;
+
+    background:#6C63FF;
+
+    color:white;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+
+.delete-btn{
+
+    border:none;
+
+    background:#EF4444;
+
+    color:white;
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+}
+
+.summary-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    height:fit-content;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+
+}
+
+.summary-card h2{
+
+    margin-bottom:25px;
+
+}
+
+.summary-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin:15px 0;
+
+}
+
+.total{
+
+    font-weight:bold;
+
+    font-size:20px;
+
+}
+
+.checkout-btn{
+
+    width:100%;
+
+    margin-top:25px;
+
+    border:none;
+
+    background:#6C63FF;
+
+    color:white;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+}
+
+.checkout-btn:hover{
+
+    background:#574ee8;
+
+}
+
+@media(max-width:900px){
+
+.cart-container{
+
+grid-template-columns:1fr;
+
+}
+
+.cart-card{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+}

@@ -1,0 +1,88 @@
+.settings-page {
+  width: 90%;
+  max-width: 1100px;
+  margin: 40px auto;
+}
+
+.settings-page h1 {
+  margin: 25px 0 35px;
+  color: #111827;
+}
+
+.settings-card {
+  background: white;
+  border-radius: 18px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.settings-card h2 {
+  color: #111827;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 12px;
+}
+
+.setting-item,
+.theme-option,
+.logout-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 12px;
+}
+
+.setting-item:hover,
+.theme-option:hover {
+  background: #f5f3ff;
+}
+
+.setting-item svg,
+.theme-option svg,
+.logout-item svg {
+  font-size: 20px;
+  color: #6c63ff;
+}
+
+.setting-item span,
+.theme-option span,
+.logout-item span {
+  font-size: 16px;
+  color: #374151;
+}
+
+.theme-option.active {
+  background: #ede9fe;
+  border: 2px solid #6c63ff;
+}
+
+.logout-item {
+  justify-content: center;
+  background: #ef4444;
+}
+
+.logout-item svg,
+.logout-item span {
+  color: white;
+}
+
+.logout-item:hover {
+  background: #dc2626;
+}
+
+@media (max-width: 768px) {
+  .settings-page {
+    width: 95%;
+  }
+
+  .setting-item,
+  .theme-option,
+  .logout-item {
+    padding: 14px;
+  }
+}

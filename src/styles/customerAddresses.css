@@ -1,0 +1,148 @@
+.address-page {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.back-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #6c63ff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background: #574ee8;
+}
+
+.address-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.address-header h1 {
+  color: #111827;
+}
+
+.add-address-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  background: #6c63ff;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.add-address-btn:hover {
+  background: #574ee8;
+}
+
+.address-card {
+  background: white;
+  border-radius: 18px;
+  padding: 25px 30px;
+  margin-bottom: 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.default {
+  border-left: 6px solid #6c63ff;
+}
+
+.address-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.address-title svg {
+  color: #6c63ff;
+  font-size: 22px;
+}
+
+.address-title h3 {
+  color: #111827;
+}
+
+.address-card p {
+  margin: 8px 0;
+  color: #4b5563;
+}
+
+.default-btn {
+  margin-top: 20px;
+  border: none;
+  background: #ede9fe;
+  color: #6c63ff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.default-btn:hover {
+  background: #ddd6fe;
+}
+
+.address-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.address-actions button {
+  border: none;
+  background: #6c63ff;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.address-actions button:hover {
+  background: #574ee8;
+}
+
+.address-actions .delete {
+  background: #ef4444;
+}
+
+.address-actions .delete:hover {
+  background: #dc2626;
+}
+
+@media (max-width: 768px) {
+  .address-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .address-actions {
+    flex-direction: column;
+  }
+
+  .address-actions button {
+    width: 100%;
+    justify-content: center;
+  }
+}
